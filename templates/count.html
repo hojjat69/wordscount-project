@@ -1,0 +1,15 @@
+<h1>You have typed the following statement:
+    {{fulltext}}
+    <br>
+    which consists of {{count}} number of words !
+
+</h1>
+<a href="{% url 'home' %}">Start Again</a>
+<h1>
+ {%for word , count in sortedwords %}
+{{word}}
+<br>
+{{count}}
+<br>
+ {% endfor %}   
+</h1>
